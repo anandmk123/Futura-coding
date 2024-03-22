@@ -1,0 +1,25 @@
+h2{
+    color:green;
+}
+
+/* id */
+#colorblue
+{
+    color:blue;
+}
+
+/*class */
+.coloryello
+{
+    color:yellow;
+}
+
+/*group*/
+h3,h4{
+    color:pink;
+}
+
+/*universal*/
+*{
+    color:gold;
+}
