@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumform</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Number 1</label>
+        <input type="text" id="firstnum"> <br><br>
+        <label for="">Number 2</label>
+        <input type="text" name="" id="secondnum"><br><br>
+        <label for="">Sum</label>
+        <input type="text" name="" id="Sum" style="margin-left: 38px;"><br><br>
+        <button type="button" style="margin-left: 48px;" onclick="formsum()">Sum</button>
+    </form>
+
+    <script>
+        function formsum(){
+        let a=document.getElementById("firstnum").value;
+        let b=document.getElementById("secondnum").value;
+        let c=parseInt(a)+parseInt(b);
+        let d=document.getElementById("Sum");
+        d.value=c;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zindexcss</title>
+        <style>
+            .first
+            {
+                height: 300px;
+                width: 300px;
+                background-color: aqua;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: 3;
+            }
+            .second
+            {
+                height: 300px;
+                width: 300px;
+                position: absolute;
+                left: 100px;
+                top: 100px;
+                z-index: 5;
+            }
+            .third{
+                height: 300px;
+                width: 300px;
+                background-color:crimson;
+                position: absolute;
+                left: 200px;
+                top: 200px;
+                z-index: 1;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="first">
+
+        </div>
+        <img src="logo.avif" alt="" class="second">
+
+        <div class="third">
+
+        </div>
+    </body>
+</html>

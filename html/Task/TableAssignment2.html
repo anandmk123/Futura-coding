@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TableAssignment2</title>
+    </head>
+    <style>
+        table,td,th
+        {
+            border: solid;
+            border-width: 2px;
+            background-color: yellow;
+            border-collapse: collapse;
+            text-align: center;
+        }
+    </style>
+    <body>
+        <table style="width: 50%;height: 100%;border-spacing: 6px;padding: 5px;">
+            <tr>
+                <th rowspan="2">Task</th>
+                <th colspan="7">Day of the Week</th>
+            </tr>
+            <tr>
+                <td>mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+            </tr>
+            <tr>
+                <td>College</td>
+                <td>Java</td>
+                <td>Web Design</td>
+                <td>C lang</td>
+                <td>Python</td>
+                <td>Practical</td>
+                <td colspan="2" rowspan="2">OFF</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Work</td>
+                <td colspan="6">Subject preparation and project work</td>
+            </tr>
+            <caption style="caption-side: bottom;"><b>Daily Schedule</b></caption>
+        </table>
+    </body>
+</html>

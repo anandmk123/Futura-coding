@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsiveness</title>
+        <style>
+            div{
+                background-color: aqua;
+                height: 300px;
+            }
+            @media screen and (max-width:1100px){
+                div{
+                    background-color: red;
+                }
+                
+            }
+            @media screen and (min-width:600px) and (max-width:800px) {
+                div{
+                    background-color: green;
+                }
+                h1{
+                    color: blue;
+                    font-size: small;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div><h1>Testing Responsiveness</h1></div>
+    </body>
+</html>

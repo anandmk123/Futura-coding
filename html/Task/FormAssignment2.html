@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FormAssgnment2</title>
+        <style>
+            td{
+                background-color: #0CF;
+                padding: 10px;                 
+            }
+        </style>
+
+    </head>
+    <body>
+        <form action="">
+            <table style="border:ridge; width: 500px; border-spacing: 10px;">
+                <tr>
+                    <th colspan="2" style="background-color: #FFA;color:Red; font-size: 30px;">Registration Form</th>
+                </tr>
+                <tr>
+                    <td>Enter Name</td>
+                    <td><input type="text" name="Name"></td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>Enter Address</td>
+                    <td><textarea name="Address" id="" cols="20" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Select Game</td>
+                    <td>
+                        <input type="checkbox" name="Hockey" id="">Hockey <br>
+                        <input type="checkbox" name="Football" id="">Football <br>
+                        <input type="checkbox" name="Batminton" id="">Batminton <br>
+                        <input type="checkbox" name="Cricket" id="">Cricket <br>
+                        <input type="checkbox" name="Vollyball" id="">Vollyball <br>                        
+                    </td>
+                </tr>    
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="Gender">Male
+                        <input type="radio" name="Gender">Female   
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>Select your age</td>
+                    <td><select name="Age" id="">
+                        <option value="Select">Select</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        </select>
+                    </td>                  
+                </tr>
+                <tr>
+                    <td>Select Photo</td>
+                    <td><input type="file" name="Photo" id=""></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="button" name="clickme" id="" value="Click Me" style="height: 40px;width: 100px;text-align: center; margin-left: 50px;" >
+                        <input type="reset" name="reset" id="" style="height: 40px;width: 100px;text-align: center;">
+                        <input type="submit" name="submit" id="" value="Submit Form" style="height: 40px;width: 100px;text-align: center;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

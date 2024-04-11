@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <head>
+        <title></title>
+        <style>
+            .red{background-color: red;grid-area: one;}
+            .green{background-color: green;grid-area: two;}
+            .blue{background-color: blue;grid-area: three;}
+            .yellow{background-color: yellow;grid-area: four;}
+            .orange{background-color: orange;grid-area: five;}
+            .grid{height: 200px; display: grid; gap: 2px;
+                grid-template-areas: 'one one one' 'two three four' 'five five four';
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="red">1</div>
+            <div class="green">2</div>
+            <div class="blue">3</div>
+            <div class="yellow">4</div>
+            <div class="orange">5</div>
+        </div>
+    </body>
+</html>

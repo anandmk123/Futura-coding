@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AnimationAssignment1</title>
+        <style>
+            div{
+                background-color: chartreuse;
+                height: 200px;
+                width: 200px;
+                position: relative;
+                animation-name: sample;
+                animation-duration: 7s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes sample
+            {
+                0%{
+                    left: 0px;
+                    top: 0px;
+                }
+                25%{
+                    left: 400px;
+                    top: 0px;
+                }
+                50%{
+                    left: 400px;
+                    top: 400px;
+                }
+                75%{
+                    left: 0px;
+                    top: 400px;
+                }
+                100%{
+                    left:0px;
+                    top:0px;                    
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div>Anand</div>
+    </body>
+</html>

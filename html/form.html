@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<style>
+    label{
+        width: 100px;
+        display: inline-block;
+        padding: 10px 10px;
+    }
+</style>
+</head>
+<body>
+    <form action="image.html">
+        <fieldset><!-- Border on form//-->
+            <legend>Student Data</legend><!--Text on Border-->
+    <label for="Name" req>Name</label>
+    <input type="text" name="" id="" required placeholder="Enter the Name"><br>
+    <label for="Gender">Gender</label>
+    <input type="radio"" id="" value="Male" name="Gender"><label for="Male">Male</label>
+    <input type="radio"" id="" value="Female" name="Gender"><label for="Female">Female</label><br>
+    <label for="Course">Course</label>
+    <input type="checkbox" name="" id=""><label for="Physics">Physics</label>
+    <input type="checkbox" name="" id=""><label for="Chemistry">Chemistry</label><br>
+    <label for="State">State</label>
+    <select name="" id="">
+        <option value="Kerala">Kerala</option>
+        <option value="Karnataka">Karnataka</option>
+    </select>
+    <br><br>
+    <label for="Address" style="vertical-align:top;">Address</label>
+    <textarea name="" id="" cols="30" rows="10"></textarea><br><br>
+    <label for="Email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter the email"><br>
+    <label for="Age">Age</label>
+    <input type="number" name="Age" id="Age" placeholder="Age" min="18" max="100" step="1"><br> 
+    <label for="Profile photo">Profile photo</label>
+    <input type="file" name="file" id="file" ><br>
+    <label for="Read only" style="vertical-align: top;" >Read only</label>
+    <textarea name="" id="" cols="20" rows="5" readonly>Click the sumbit before move forward</textarea>    
+
+    <br>
+    
+    <input type="submit" name="" id="">
+    <button type="submit" style="margin-left: 200px;">Reset</button>
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GridTask1</title>
+        <style>
+            .maingrid{
+                height: 120vh;
+                display: grid;
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows:1fr 2fr 1fr 2fr 1fr ;
+                grid-template-areas: "sub1 sub2 sub2" "sub1 sub3 sub4" "sub1 sub5 sub5" "sub1 sub6 sub7" "sub8 sub8 sub8";
+
+            }
+            .borderpro{
+                border: solid;
+                border-width: 2px;
+                border-color:chocolate;
+
+            }
+            .subgrid1{
+                background-color: green;
+                grid-area: sub1;
+            }
+            .subgrid2{
+                background-color: green;
+                grid-area: sub2;
+            }
+            .subgrid3{
+                background-color: green;
+                grid-area: sub3;
+            }
+            .subgrid4{
+                background-color: green;
+                grid-area: sub4;
+            }
+            .subgrid5{
+                background-color: green;
+                grid-area: sub5;
+            }
+            .subgrid6{
+                background-color: green;
+                grid-area: sub6;
+            }
+            .subgrid7{
+                background-color: green;
+                grid-area: sub7;
+            }
+            .subgrid8{
+                background-color: green;
+                grid-area: sub8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="maingrid">
+           <div class="borderpro subgrid1">Div 1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div> 
+           <div class="borderpro subgrid2">Div 2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div> 
+           <div class="borderpro subgrid3">Div 3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div> 
+           <div class="borderpro subgrid4">Div 4 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div> 
+           <div class="borderpro subgrid5">Div 5 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div> 
+           <div class="borderpro subgrid6">Div 6 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div> 
+           <div class="borderpro subgrid7">Div 7 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div> 
+           <div class="borderpro subgrid8">Div 8 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div> 
+        </div>
+    </body>
+</html>

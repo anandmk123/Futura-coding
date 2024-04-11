@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>nthchild</title>
+        <style>
+            table,th,td{
+                border: groove;
+                border-collapse: collapse;
+                border-color: blue;
+                text-align: center;
+            }
+            th{
+                color: blue;
+                background-color:grey;
+            }
+            tr:nth-child(even)
+            {
+                color: black;
+                background-color: greenyellow;
+            }
+            tr:nth-child(odd)
+            {
+                color: black;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <table style="width:30%;">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td>1001</td>
+                <td>Suresh</td>
+                <td>Phyics</td>
+            </tr>
+            <tr>
+                <td>1002</td>
+                <td>Ram</td>
+                <td>Economics</td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>Preeti</td>
+                <td>chemistry</td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>Shalini</td>
+                <td>Zoology</td>
+            </tr>
+            <tr>
+                <td>1004</td>
+                <td>Vivek</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>1005</td>
+                <td>Ramesh</td>
+                <td>Botany</td>
+            </tr>
+        </table>
+    </body>
+</html>
