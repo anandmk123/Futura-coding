@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote</title>
+</head>
+<body>
+    <form action="">
+        <label for="">Name</label>
+        <input type="text" id="Name"> <br><br>
+        <label for="">Age</label>
+        <input type="text" name="" id="Age"><br><br>
+        <button type="button" style="margin-left: 48px;" onclick="checkeligible()">Check</button>
+    </form>
+
+    <script>
+        function checkeligible(){
+        let b=document.getElementById("Age").value;
+        if(b>=18){
+            alert("Eligible for vote")
+        }
+        else
+        {
+            alert("Not Eligible for vote") 
+        }
+        }
+    </script>
+</body>
+</html>

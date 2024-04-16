@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fib</title>
+</head>
+<body>
+    <script>
+        let firstfib=0;
+        let secondfib=1;
+        document.write(firstfib + "<br>");
+        document.write(secondfib + "<br>");
+        let thirdfib=0;
+        let i=2;
+        while(i<20){
+            thirdfib=firstfib+secondfib;
+            document.write(thirdfib + "<br>");
+            firstfib=secondfib;
+            secondfib=thirdfib;
+            i=i+1;
+        }
+    </script>    
+</body>
+</html>
