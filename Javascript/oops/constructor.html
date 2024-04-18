@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructor</title>
+</head>
+<body>
+    <script>
+        class student{
+            constructor(Name,Age,Email){
+                this.Name=Name;
+                this.Age=Age;
+                this.Email=Email;
+            }
+            dispaly(){
+                document.write(this.Name+" ");
+                document.write(this.Age+" ");
+                document.write(this.Email+"<br>");
+            }
+        }
+
+        let S1=new student("Anand",34,"anand@gmail.com")
+        S1.dispaly()
+        let S2=new student()
+        S2.dispaly()
+    </script>
+</body>
+</html>

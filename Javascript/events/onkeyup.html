@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onkeyup</title>
+</head>
+<body>
+    <h1 id="change">On keyup the color and font</h1>
+    <input type="text" onkeyup="changefun()">
+    <script>
+        function changefun(){
+            let a=document.getElementById("change");
+            a.style.color="Red"
+            a.style.fontSize="50px"
+        }        
+    </script>
+</body>
+</html>

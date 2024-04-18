@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailvalidation</title>
+</head>
+<input type="text" id="emailtext">
+<button onclick="checkemail()" type="submit">check</button>
+<script>
+    function checkemail(){
+        const email=document.getElementById("emailtext").value;
+        const regularexp=/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
+        if(regularexp.test(email)){
+            alert(email+" is Valid")
+        }
+        else{
+            alert(email+" is not Valid")
+        }
+
+    }
+</script>
+
+<body>
+    
+</body>
+</html>

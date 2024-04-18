@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>null validation</title>
+</head>
+<body>
+    <input type="text" name="" id="Name" placeholder="Name" onkeyup="clearmsg('msg')"><br>
+    <span id="msg"></span><br><br>
+    <button type="submit" onclick="nullvalidation()">Submit</button>
+    <script>
+
+        function nullvalidation(){
+            const Namevalue=document.getElementById("Name").value;
+            if(Namevalue==""){
+                document.getElementById("msg").innerHTML="Enter Name"
+                document.getElementById("msg").style.color="Red"
+                
+            }
+        }
+        function clearmsg(spid){
+            document.getElementById(spid).innerHTML=""
+        }
+
+    </script>
+</body>
+</html>

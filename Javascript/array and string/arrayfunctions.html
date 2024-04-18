@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array function</title>
+</head>
+<body>
+    <script>
+        let a=["red","green","black","blue","yellow"];
+        a.sort();
+        document.write("Soretd string array : "+a +"<br>")
+        a.sort().reverse();
+        document.write("Soretd string array reverse: "+a +"<br>")
+        document.write("Length of array : "+a.length + "<br>")
+
+        let b=[9,0,3,8,2,5,4,4];
+        b.sort();
+        document.write("Soretd single digit number array : "+b +"<br>")
+
+        let c=[93,231,90,55,45,95,104,4];
+        c.sort();
+        document.write(" double digit number array sorting is not working using normal sort function : "+c +"<br>")
+
+        c.sort(function(x,y){
+            return(x-y);
+        })
+        document.write("Soretd double digit number array using extra function : "+c +"<br>");
+
+        c.sort(function(x,y){
+            return(y-x);
+        })
+        document.write("Soretd double digit number array using extra function reverse: "+c +"<br><br>")
+
+        document.write("Array iteration using for each"+"<br><br>");
+        a.forEach(function(color){
+            document.write(color + "<br>")
+        })
+
+    </script>
+   
+</body>
+</html>

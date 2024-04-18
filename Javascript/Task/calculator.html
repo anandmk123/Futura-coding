@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container d-flex justify-content-center">
+        <div style="background-color: dimgray;height: 550px;width: 400px;margin-top: 100px;">
+            <form action="" name="calculator">
+                <input type="text" name="answer" id="" style="width: 300px;margin-top: 40px;margin-left: 14%;"><br>
+
+                <input type="button" name="" id="" value="1" class="me-3 my-5" style="width: 40px;margin-left:14%" onclick="calculator.answer.value +='1'">
+                <input type="button" name="" id="" value="2" class="mx-3 my-5" style="width: 40px;" onclick="calculator.answer.value +='2'">
+                <input type="button" name="" id="" value="3" class="mx-3 my-5" style="width: 40px;" onclick="calculator.answer.value +='3'">
+                <input type="button" name="" id="" value="+" class="mx-3 my-5" style="width: 40px;" onclick="calculator.answer.value +='+'">
+
+                
+                <input type="button" name="" id="" value="4" class="me-3 my-3" style="width: 40px;margin-left:14%" onclick="calculator.answer.value +='4'">
+                <input type="button" name="" id="" value="5" class="mx-3 my-3" style="width: 40px;" onclick="calculator.answer.value +='5'">
+                <input type="button" name="" id="" value="6" class="mx-3 my-3" style="width: 40px;" onclick="calculator.answer.value +='6'">
+                <input type="button" name="" id="" value="-" class="mx-3 my-3" style="width: 40px;" onclick="calculator.answer.value +='-'">
+
+                <input type="button" name="" id="" value="7" class="me-3 my-5" style="width: 40px;margin-left:14%" onclick="calculator.answer.value +='7'">
+                <input type="button" name="" id="" value="8" class="mx-3 my-5" style="width: 40px;" onclick="calculator.answer.value +='8'">
+                <input type="button" name="" id="" value="9" class="mx-3 my-5" style="width: 40px;" onclick="calculator.answer.value +='9'">
+                <input type="button" name="" id="" value="*" class="mx-3 my-5" style="width: 40px;" onclick="calculator.answer.value +='*'">
+
+                <input type="button" name="" id="" value="/" class="me-3 my-3" style="width: 40px;margin-left:14%" onclick="calculator.answer.value +='/'">
+                <input type="button" name="" id="" value="0" class="mx-3 my-3" style="width: 40px;" onclick="calculator.answer.value +='0'">
+                <input type="button" name="" id="" value="." class="mx-3 my-3" style="width: 40px;" onclick="calculator.answer.value +='.'">
+                <input type="button" name="" id="" value="=" class="mx-3 my-3" style="width: 40px;" onclick="calculator.answer.value=eval(calculator.answer.value)">
+
+                <input type="button" name="" id="" value="C" class="me-3 my-5" style="width: 40px;margin-left:14%;background-color: red;" onclick="calculator.answer.value=''">
+
+
+            </form>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
