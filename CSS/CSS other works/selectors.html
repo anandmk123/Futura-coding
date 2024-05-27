@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+
+        /* and selector with id tow classes and div element*/
+        div#and.redcolor.blackcolor{
+            background-color: red;
+            border: solid black 3px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* attribute selector with value */
+        [data-value="data1"]{
+            background-color: yellow;
+            border: solid blue 4px;
+            padding: 20px;
+            margin: 20PX;
+        }
+        [data-value="data2"]{
+            background-color:orange;
+            border: solid darkgreen 4px;
+            padding: 20px;
+            margin: 20PX;
+        }
+        [aria-checked]{
+            background-color: brown;
+        }
+
+        /* child selector */
+        .maindiv .child1{
+            border: solid 4px blue;
+        }
+        .maindiv div{
+            border: solid 5px yellow;            
+        }
+        .maindiv div div{
+            border: solid 6px green;            
+        }
+
+        /* or selector */
+        .para1,.para2,.para3{
+            border:solid 7px red;
+        }
+
+        /* sibling selector  select immediate sibling*/
+        .me1+div{
+            border: solid 10px grey; 
+        }
+        
+        /* sibling selector  select immediate sibling*/
+        .me2~div{
+            border: solid 10px lightgreen; 
+        }
+
+        /* star selector */
+        .starselector *{
+            border: solid 4px violet;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- /and selecter worked -->
+    <div class="redcolor blackcolor" id="and">
+        <div>div1.1</div>
+        <div>div1.2</div>
+        <div>div1.3</div>
+    </div>
+    <!-- and selector is not working -->
+    <div class="redcolor">
+        <div>and selector is not working</div>
+    </div>
+
+    <!-- attribute selector -->
+    <div>
+        <p data-value="data1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ratione impedit tempora ex officiis eligendi, provident esse quaerat corrupti ducimus aut libero non vel recusandae debitis reiciendis consectetur iste nemo!</p>
+        <p data-value="data2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ratione impedit tempora ex officiis eligendi, provident esse quaerat corrupti ducimus aut libero non vel recusandae debitis reiciendis consectetur iste nemo!</p>
+        <p aria-checked="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit ratione impedit tempora ex officiis eligendi, provident esse quaerat corrupti ducimus aut libero non vel recusandae debitis reiciendis consectetur iste nemo!</p>
+    </div>
+
+    <!-- child selector -->
+    <div class="maindiv">
+        <div class="child1">child 1</div>
+        <div>child 2
+            <div>
+                child 3
+            </div>
+        </div>
+        <div>child 3</div>
+    </div>
+
+    <!-- Or selector -->
+    <div>
+        <p class="para1">para 1</p>
+        <p class="para2">para 2</p>
+        <p class="para3">para 3</p>
+    </div>
+
+    <!-- sibling selector -->
+    <div>
+        <div class="me1">my self1</div>
+        <div class="sibling1">sibling1</div>
+        <div class="sibling2">sibling2</div>
+    </div>
+
+    <div>
+        <div class="me2">my self2</div>
+        <div class="sibling1">sibling1</div>
+        <div class="sibling2">sibling2</div>
+    </div>
+
+    <!-- star selector -->
+    <div class="starselector">
+        <div>starselector child 1</div>
+        <div>starselector child 2</div>
+        <div>starselector child 3</div>
+    </div>
+
+</body>
+</html>

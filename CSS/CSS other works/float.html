@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        .box{
+            height: 200px;
+            width:200px;
+            background-color: blue;
+            margin: 20px;
+            float: left;
+        }
+        /* remove float effect for one outside element */
+        .floatout{
+            clear: both;
+        }
+        /* remove float effecr for all out side element
+         */
+        .maindiv{
+            display: flow-root;
+        }
+    </style>
+</head>
+<body>
+    <div >
+        <div class="box">
+            box 1 
+        </div>
+        <div class="box">
+            box 2
+        </div>
+        <p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p>2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p>3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p>4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p>5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p>6 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p>7 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p>8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+    </div>
+    <div >
+        <div class="box">
+            box 3 
+        </div>
+    </div>
+    <div>
+        <p>8 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p class="floatout">9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+    </div>
+
+    <div class="maindiv">
+        <div class="box">
+            box 4 
+        </div>
+    </div>
+    <div>
+        <p>9 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+        <p class="floatout">10 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit perspiciatis dignissimos expedita eveniet tenetur tempore. Quod totam provident iste culpa numquam. Ipsum similique facere ullam debitis praesentium quidem molestias nemo!</p>
+    </div>
+ 
+</body>
+</html>

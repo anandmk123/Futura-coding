@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zindex</title>
+    <style>
+        .navbar{
+            background-color: blue;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            padding: 20px;
+            /* At Highest level z-index race is between navbar and overall artcle where navbar wins*/
+            z-index: 3;
+        }
+        article{
+            position: relative;
+            /* create a stacking-context */
+            z-index: 2;
+        }
+
+        .article_style{
+            border: solid 3px;
+            padding: 10px;
+            font-size: 20px;
+            position: relative;
+            background-color: aqua;
+        }
+
+        /* At second level inside article z-index race between red,yellow and blue which is not effected by the race between navbar and artilce */
+        .red{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            z-index: 5;
+        }
+        .yellow{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            position: relative;
+            bottom: 30px;
+            left: 150px;
+            z-index: 4;
+            
+        }
+        .blue{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            position: relative;
+            bottom: 60px;
+            left: 200px;
+            z-index: 3;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <span>Menu 1</span>
+        <span>Menu 1</span>
+        <span>Menu 1</span>
+    </header>
+    <article>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+
+    </article>
+    <footer>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+        <div class="article_style">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum provident sit qui neque esse ipsa architecto repellat fuga ipsam aut velit, doloribus quidem dolore accusamus autem veritatis odio, sint et?</div>
+    </footer>
+</body>
+</html>

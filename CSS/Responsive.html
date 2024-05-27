@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsiveness</title>
         <style>
             div{
@@ -22,6 +24,26 @@
                     font-size: small;
                 }
             }
+            @media screen  and (width<=599px) and (width>= 300px){
+                div{
+                    background-color:brown;
+                }
+                h1{
+                    color:green;
+                    font-size: x-small;
+                }
+            }
+
+            /* When click on print */
+            @media print {
+
+                h1{
+                    color:cyan;
+                    font-size: 100px;
+                }
+            }
+
+
         </style>
     </head>
     <body>

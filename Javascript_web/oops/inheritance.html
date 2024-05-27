@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        class A{
+            read(a){
+                this.a=a;
+                document.write("welcome")
+            }
+        }
+        class B extends A
+        {
+            display(){
+            document.write(" to future")
+            }
+        }
+        let obj= new B();
+        obj.read(5)
+        console.log(obj.a)
+        obj.display();
+
+     
+    </script>
+</body>
+</html>

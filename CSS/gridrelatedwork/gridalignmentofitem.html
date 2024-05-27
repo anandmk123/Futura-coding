@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridtemparea_and_gridarea</title>
+    <style>
+        .maindiv{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 30vh 50vh 20vh;
+            grid-template-areas: 
+            "header header header slide"
+            "main main main slide"
+            "footer footer slide2 slide2 ";
+
+            /* alignment of items with-in each grid area w.r.t x axis*/
+            /* justify-items: start; */
+            justify-items: center;
+            /* alignment of items with-in each grid area w.r.t y axis*/            
+            align-items: end;
+        }
+        .headerpart{
+            background-color: blue;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: header;
+        }
+        .slidepart{
+            background-color: seagreen;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: slide;
+        }
+        .mainpart{
+            background-color: saddlebrown;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: main;
+
+            /* align-items and justify-items for each indivual child */
+            justify-self: start;
+            align-self: center;
+        }
+        .footerpart{
+            background-color:darkviolet;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: footer;
+        }
+        .slidepart2{
+            background-color: cyan;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: slide2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="headerpart">
+            header part is hear
+        </div>
+        <div class="slidepart">
+            slide part is hear
+        </div>
+        <div class="mainpart">
+            mainpart is hear lo
+        </div>
+        <div class="slidepart2">
+            slide part is hear2
+        </div>
+        <div class="footerpart">
+            foter part is hear
+        </div>
+    </div>
+</body>
+</html>

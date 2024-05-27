@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritance_example</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(Name,Age){
+                this.Name=Name;
+                this.Age=Age;
+            }
+            getName(){
+                return this.Name;
+            }
+            getAge(){
+                return this.age;
+            }
+        }
+
+        class programmer extends person{
+            constructor(Name,Age,Company,salary)
+            {
+                super(Name,Age)
+                this.Company=Company
+                this.salary=salary
+            }
+            display(){
+                console.log(this.Company + " " + this.getName())
+            }
+        }
+
+        let Anand=new programmer("ANAND",25,"Ellucian",322222)
+        Anand.display()
+
+    </script>
+</body>
+</html>

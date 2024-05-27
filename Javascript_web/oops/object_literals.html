@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objecttypeandforin</title>
+</head>
+<body>
+    <script>
+        const car={Name:"Maruti",Color:"Red",Model:"Brezza",Year:2022,Kilometer:30};//object
+
+        let student={
+            name:"Anand",
+            age:25,
+            mark1:45,
+            mark4:78,
+            displayage(){
+                document.write(this.age +"<br>")
+            },
+            sumoofmarks(){
+                return this.mark1+this.mark4
+            }
+        }
+
+        for(let i in car){
+            document.write(car[i]+"<br>")
+        }
+        document.write(car.Name+"<br>")
+        student.displayage()
+        document.write(student.sumoofmarks()+"<br>")
+    </script>
+</body>
+</html>

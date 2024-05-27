@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexparent</title>
+    <style>
+        .maindiv{
+            display:flex;
+            background-color:yellow;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content:flex-start;
+            height: 100vh;
+            /* align-items: flex-end; */
+            align-content:center;
+            gap:10px;
+            /*gap:10px 30px*/   /* row gap column gap*/
+            /* column-gap: 40px; */
+            /* row-gap: 30px; */
+            
+            
+        }
+        .child{
+            background-color:red;
+            border:solid 2px;
+            padding: 50px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="child">div 1 child of maindiv</div>
+        <div class="child">div 2 child  of maindiv</div>
+        <div class="child">div 3 child  of maindiv</div>
+        <div class="child">div 4 child of maindiv</div>
+        <div class="child">div 5 child  of maindiv</div>
+        <div class="child">div 6 child  of maindiv</div>
+        <div class="child">div 7 child of maindiv</div>
+        <div class="child">div 8 child  of maindiv</div>
+        <div class="child">div 9 child  of maindiv</div>
+        <div class="child">div 10 child of maindiv</div>
+        
+    </div>
+</body>
+</html>

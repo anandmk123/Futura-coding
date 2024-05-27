@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_check</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" id="number" placeholder="number" style="width: 120px;margin-top: 40px;"><br><br>
+        <input type="button" value="1" onclick="addvalue('1')">
+        <input type="button" value="2" onclick="addvalue('2')">
+        <input type="button" value="3" onclick="addvalue('3')">
+        <input type="button" value="4" onclick="addvalue('4')">
+        <input type="button" value="=" onclick="findvalue()">
+        <br><br>
+        <input type="button" value="5" onclick="addvalue('5')">
+        <input type="button" value="6" onclick="addvalue('6')">
+        <input type="button" value="7" onclick="addvalue('7')">
+        <input type="button" value="8" onclick="addvalue('8')">
+        <input type="button" value="+" onclick="addvalue('+')">
+        <br><br>
+        <input type="button" value="9" onclick="addvalue('9')">
+        <input type="button" value="0" onclick="addvalue('0')">
+        <input type="button" value="/" onclick="addvalue('/')">
+        <input type="button" value="-" onclick="addvalue('-')">
+        <input type="button" value="*" onclick="addvalue('*')">
+        <input type="button" value="C" onclick="clearthearea()">
+    </form>
+    <script>
+        function addvalue(a){
+            let number=document.getElementById("number");
+            number.value+=a;
+        }
+        function findvalue(){
+            let number=document.getElementById("number");
+            number.value=eval(number.value)
+        }
+        function clearthearea(){
+            let number=document.getElementById("number");
+            number.value='';
+        }
+    </script>
+</body>
+</html>

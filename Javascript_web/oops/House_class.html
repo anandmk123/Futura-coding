@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House_class</title>
+</head>
+<body>
+    <script>
+        class person{
+            constructor(Name,Age){
+                this.Name=Name;
+                this.Age=Age;
+            }
+            getName(){
+                return this.Name;
+            }
+            getAge(){
+                return this.age;
+            }
+
+        }
+        class home{
+            constructor(Address,Price,Members){
+                this.Address=Address
+                this.Price=Price
+                this.Members=Members
+            }
+            getAddress(){
+                return this.Address
+            }
+            getPrice(){
+                return this.Price
+            }
+            getMembers(){
+                return this.Members
+            }
+            addMembers(newmember){
+                this.Members.push(newmember)
+            }
+        }
+        let Anand=new person("Anand",25)
+        let Shelna=new person("Shelna",32)
+        let Myhome=new home("Vatakara",2112,[Anand,Shelna])
+        document.write(Myhome.getAddress() + "<br>" + Myhome.getPrice() + "<br>" + Myhome.getMembers()[0].getName()+"<br>" + Myhome.getMembers()[1].getName()+"<br>")
+        console.log(Myhome.getMembers())
+        let Mizhi=new person("Mizhika",8)
+        Myhome.addMembers(Mizhi)
+        document.write(Myhome.getAddress() + "<br>" + Myhome.getPrice() + "<br>" + Myhome.getMembers()[0].getName()+"<br>" + Myhome.getMembers()[1].getName()+ "<br>" + Myhome.getMembers()[2].getName()+"<br>")
+        console.log(Myhome.getMembers())
+    </script>
+</body>
+</html>

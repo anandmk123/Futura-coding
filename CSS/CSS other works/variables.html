@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+    <style>
+        /* Declared on root.Global scope */
+        :root{
+            --secondarycolor:yellow;
+        }
+        .div1{
+            --pirmecolor:red;
+        }
+        .para1{
+            color: var(--pirmecolor);
+        }
+
+        /* --pirmecolor is out of scope */
+        .para3{
+            color: var(--pirmecolor);
+        }
+
+        .para2{
+            color: var(--secondarycolor);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <p class="para1">This is para1</p>
+        <p class="para2">This is para2</p>
+    </div>
+    <div class="div2">
+        <p class="para3">This is para3</p>
+    </div>
+</body>
+</html>

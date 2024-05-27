@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position_related</title>
+    <style>
+        div{
+            border: solid 2px;
+            font-size: 20px;
+            margin: 20px;
+            padding: 20px;
+
+        }
+        .relative_check{
+            position: relative;
+            top:30px;
+            left: 20px;
+            background-color: aqua;
+        }
+        .fix_check{
+            position: fixed;
+            background-color: blue;
+            left: 0;
+            top:0;
+        }
+        .absolute_check{
+            position: absolute;
+            background-color: deeppink;
+            left: 30px;
+            top: 0;
+        }
+        .stikcy_checktop{
+            position: sticky;
+            background-color: firebrick;
+            top:0;
+        }
+        .stikcy_checkbottom{
+            position: sticky;
+            background-color: firebrick;
+            bottom:0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span class="relative_check">check relative</span>Ratione alias beatae nobis repellat, distinctio illum neque placeat exercitationem perferendis aliquam, a, reprehenderit aspernatur consequuntur molestiae necessitatibus accusantium in dicta velit.
+        <div class="sub1">
+            Lorem, ipsum dolor sit amet consectetur 1 2 3 4 <span class="fix_check">fixed check</span> 5 6 7 8 9 10 11 12 Corporis in natus, voluptatibus alias itaque, explicabo dolor praesentium non animi ab illo quisquam. Neque sunt dolores consequatur impedit exercitationem cupiditate doloribus!
+            <div class="sub2" style="position: relative;">
+                Lorem ipsum dolor sit amet consectetur 1 2 3 4<span class="absolute_check">absolute check</span> 5 6 7 8 9 10 11 12 adipisicing elit. Cupiditate veritatis in quos molestiae. Culpa blanditiis molestiae officiis sunt repellendus voluptatem soluta voluptates. Voluptates quas ex unde obcaecati explicabo alias fuga?
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 300px;overflow: auto;">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+        </div>
+        <span class="stikcy_checktop">stikcy check top</span>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+        </div> 
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.1 2 3 4  5 6 7 8 9 10 11 12 Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+        </div>
+        <span class="stikcy_checkbottom">stikcy check bottom</span>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+        </div>
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+    </div>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum ab nemo iusto dolor suscipit labore reiciendis quis ipsam obcaecati. Fuga et laudantium libero doloremque adipisci rerum soluta dicta! Asperiores, saepe.
+    </div>
+</body>
+</html>

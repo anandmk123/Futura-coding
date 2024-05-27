@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaquery_orientation</title>
+    <style>
+        .maindiv{
+            display: flex;
+        }
+        .div1{
+            background-color: aqua;
+            padding: 10px;
+            border: solid;
+        }
+        .div2{
+            background-color:yellow;
+            padding: 10px;
+            border: solid;
+        }
+        .div3{
+            background-color:blue;
+            padding: 10px;
+            border: solid;
+        }
+        /* Normal mobile view- Height is greater than width */
+        @media screen and (orientation:portrait) {
+            .maindiv{
+            flex-direction: row;
+        }
+        }
+
+        /* Rotated mobile view-  Width is greater than Height */
+        @media screen and (orientation:landscape) {
+            .maindiv{
+            flex-direction: column;
+        }
+        }        
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="div1">Div 1 child</div>
+        <div class="div2">Div 2 child</div>
+        <div class="div3">Div 3 child</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heightwidth</title>
+    <style>
+        .maindiv{
+            height: 300px;
+            width: 300px;
+            background-color: aqua;
+            padding: 100px;
+        }
+        .subdiv{
+            background-color: blue;
+            height: 100%;
+            width: 100%;
+            padding: 100px;
+            /* border-box --> to make height and width including border not content            
+             */
+            box-sizing: border-box;
+
+            overflow: auto;
+            /* overflow-x:hidden;
+            overflow-y: scroll; */
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv"> 
+        <div class="subdiv">Sub Div Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam amet laborum numquam, quam voluptates aliquam laudantium nisi ipsam provident cum minima vel cupiditate eligendi obcaecati libero, mollitia aspernatur maxime.</div>
+    </div>
+</body>
+</html>

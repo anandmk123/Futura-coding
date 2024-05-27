@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cc</title>
+</head>
+<body>
+    <!-- <input type="text" name="" id="Name" placeholder="Name" onkeyup="clearmsg('msg')"><br>
+    <span id="msg"></span><br><br> -->
+    <Label>Name</Label>
+    <input type="text" id="Name" placeholder="Name" style="margin-left: 100px;" onkeyup="clearmsg('Namearea')"><br>
+    <span id="Namearea" style="margin-left: 100px;"></span><br><br>
+    <Label>Email</Label>
+    <input type="text" id="Emailval" placeholder="Email" style="margin-left: 100px;" onkeyup="clearmsg('Emailarea')"><br>
+    <span id="Emailarea" style="margin-left: 100px;"></span><br><br>
+    <Label>Password</Label>
+    <input type="password" id="pass1" placeholder="Password" style="margin-left: 75px;" onkeyup="clearmsg('pass1area')"><br><br>
+    <span id="pass1area"></span><br>
+    <Label>Confirm Password</Label>
+    <input type="password" id="pass2" placeholder="Confirm Password" style="margin-left: 14px;" onkeyup="clearmsg('pass2area')"><br><br>
+    <span id="pass2area"></span><br>
+    <button type="submit" onclick="nullvalidation()">Submit</button>
+    <script>
+
+        function nullvalidation(){
+            const Namevalue=document.getElementById("Name").value;
+            let EmailValue=document.getElementById("Emailval").value;
+            let Passwordvalue1=document.getElementById("pass1").value;
+            let Passwordvalue2=document.getElementById("pass12").value;
+            if(Namevalue==""){
+                document.getElementById("Namearea").innerHTML="Enter Name"
+                document.getElementById("Namearea").style.color="Red"
+                
+            }
+            if(EmailValue==""){
+                    document.getElementById("Emailarea").innerHTML="Enter Email"
+                    document.getElementById("Emailarea").style.color="Red"                    
+                }
+            if(Passwordvalue1==""){
+                document.getElementById("pass1area").innerHTML="Enter Password"
+                document.getElementById("pass1area").style.color="Red"                    
+            }
+            if(Passwordvalue2==""){
+                document.getElementById("pass2area").innerHTML="Enter Password"
+                document.getElementById("pass2area").style.color="Red"                    
+            }              
+        }
+        function clearmsg(spid){
+            document.getElementById(spid).innerHTML=""
+        }
+
+    </script>
+</body>
+</html>

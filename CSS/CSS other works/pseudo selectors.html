@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+    <style>
+        /*first child -div is first child-worked*/
+        .pseudo div:first-child{
+            background-color: green;
+        }
+        /*first child -p is not first child-not worked  */
+        .pseudo p:first-child{
+            background-color: green;
+        }
+
+        /*last child -p is last child-worked*/
+        .pseudo p:last-child{
+            background-color: red;
+        }
+
+        /*first of type -select first p */
+        .pseudo p:first-of-type{
+            background-color: blue;
+        }
+
+        /*last of type -select last div */
+        .pseudo div:last-of-type{
+            background-color: yellow;
+        }                 
+
+        /*only child -select only if it has one child- worked */
+        .pseudo2 p:only-child{
+            background-color: darkblue;
+        }
+        
+        /*only-of-type -select only if it has one child- worked */
+        .pseudo article:only-of-type{
+            background-color: darkblue;
+        }   
+        
+        /* nth child- select if nth child is div */
+        .pseudo div:nth-child(2){
+            background-color: crimson;
+        }
+        /* nth child- select 6th child irrespctve of element type  */
+        .pseudo *:nth-child(6){
+            background-color: skyblue;
+        }        
+
+        /* nth-of-type- select 2nd div */
+        .pseudo3 p:nth-of-type(2){
+            background-color: crimson;
+        } 
+        
+        /*nth child-Equation */
+        .pseudo3 div:nth-child(2n){
+            background-color:darkgray;
+        }        
+
+        /*not selector - exclude div*/
+        .pseudo3 *:not(div){
+            background-color:slateblue;
+        }          
+
+    </style>
+</head>
+<body>
+    <div class="pseudo">
+        <div>div1</div>
+        <div>div2</div>
+        <div>div3</div>
+        <article>only-of-type</article>
+        <p>para1</p>
+        <p>para2</p>
+        <p>para3</p>
+    </div>
+    <div class="pseudo2">
+        <p>only child</p>
+    </div>
+    <div class="pseudo3">
+        <div>div 4</div>
+        <div>div 5</div>
+        <p>para 5</p>
+        <div>div 6</div>
+        <p>para 6</p>
+    </div>
+</body>
+</html>

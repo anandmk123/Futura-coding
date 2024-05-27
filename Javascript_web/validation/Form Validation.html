@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+        <Label>Name</Label>
+        <input type="text" id="Name" placeholder="Name" style="margin-left: 100px;" onkeyup="clearmsg('Namearea')"><br>
+        <span id="Namearea" style="margin-left: 142px;"></span><br><br>
+        <Label>Email</Label>
+        <input type="text" id="Emailval" placeholder="Email" style="margin-left: 100px;" onkeyup="clearmsg('Emailarea')"><br>
+        <span id="Emailarea" style="margin-left: 142px;"></span><br><br>
+        <Label>Password</Label>
+        <input type="password" id="pass1" placeholder="Password" style="margin-left: 75px;" onkeyup="checkpassword()"><br>
+        <span id="pass1area" style="margin-left: 142px;"></span><br><br>
+        <Label>Confirm Password</Label>
+        <input type="password" id="pass2" placeholder="Confirm Password" style="margin-left: 14px;" onkeyup="confrpassword()"><br>
+        <span id="pass2area" style="margin-left: 142px;"></span><br><br>
+        <button type="submit" onclick="nullvalidation();checkemail()">Submit</button>
+    <script>
+            function nullvalidation(){
+                let Namevalue=document.getElementById("Name").value;
+                //document.write(Namevalue)
+                let EmailValue=document.getElementById("Emailval").value;
+                //document.write(EmailValue)
+                let Passwordvalue1=document.getElementById("pass1").value;
+                let Passwordvalue2=document.getElementById("pass2").value;
+
+                if(Namevalue==""){
+                    document.getElementById("Namearea").innerHTML="Enter Name"
+                    document.getElementById("Namearea").style.color="Red"                    
+                }
+                if(EmailValue==""){
+                    document.getElementById("Emailarea").innerHTML="Enter Email"
+                    document.getElementById("Emailarea").style.color="Red"                    
+                }
+                if(Passwordvalue1==""){
+                    document.getElementById("pass1area").innerHTML="Enter Password"
+                    document.getElementById("pass1area").style.color="Red"                    
+                }
+                if(Passwordvalue2==""){
+                    document.getElementById("pass2area").innerHTML="Enter Password"
+                    document.getElementById("pass2area").style.color="Red"                    
+                }
+            }
+            function clearmsg(spid){
+                document.getElementById(spid).innerHTML=""
+            }
+
+            function checkemail(){
+                const EmailValue=document.getElementById("Emailval").value;
+                const regularexp=/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/
+                if(regularexp.test(EmailValue) && EmailValue!=""){
+                    document.getElementById("Emailarea").innerHTML="Valid Email"
+                    document.getElementById("Emailarea").style.color="Green"      
+                }
+                else if(EmailValue!=""){
+                    document.getElementById("Emailarea").innerHTML="Invalid Email"
+                    document.getElementById("Emailarea").style.color="Red"  
+                }
+            }
+
+            function checkpassword()
+                {
+                    let passwordinput1=document.getElementById("pass1").value;
+                    let regexpass=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+                    if(regexpass.test(passwordinput1)){
+                        document.getElementById("pass1area").style.color="Green";
+                        document.getElementById("pass1area").innerHTML="Password is valid";
+                    }
+                    else{
+                        document.getElementById("pass1area").style.color="Red";
+                        document.getElementById("pass1area").innerHTML="Password is not valid. Password must contain atleast one uppercase,one lowercase,one digit and one special character";            
+                    }
+                }
+                function confrpassword()
+                {
+                    let passwordinput1=document.getElementById("pass1").value;
+                    let passwordinput2=document.getElementById("pass2").value;
+                    if((passwordinput1==passwordinput2)){
+                        document.getElementById("pass2area").style.color="Green";
+                        document.getElementById("pass2area").innerHTML="Password is confirmed";
+                    }
+                    else{
+                        document.getElementById("pass2area").style.color="Red";
+                        document.getElementById("pass2area").innerHTML="Password is not matching";            
+                    }
+                }              
+    </script>
+</body>
+</html>

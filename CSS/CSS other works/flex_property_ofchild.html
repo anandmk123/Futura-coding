@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexpropertyofchild</title>
+    <style>
+        .maindiv{
+            display: flex;
+            background-color: blue;
+            height: 600px;
+        }
+        .child{
+            background-color: green;
+            padding: 50px;
+            border: solid 3px;
+        }
+        /* change the of display */
+        /* .order{
+            order: -1;
+        } */
+
+        /* size of a child */
+        /* .basesize{
+            flex-basis: 400px;
+        } */
+
+        /* Demand for the free portions - div2 claim 1/3 part and div3 claim 2/3 part of total free portion*/
+        /* .grow1{
+            flex-grow: 1;
+        }
+        .grow2{
+            flex-grow: 2;
+        } */
+
+        /*  div2 will shrink 3 times faster than others when window size is less than div size*/
+        /* .shrink{
+            flex-shrink: 3;
+        } */
+
+        /* Align-item property for individual child */
+        .selfalign{
+            align-self: flex-start;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="child basesize selfalign">div 1 child of maindiv</div>
+        <div class="child grow1 shrink">div 2 child of maindiv</div>
+        <div class="child order grow2">div 3 child of maindiv</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margincollaps</title>
+    <style>
+        .firstdiv{
+            border: solid 1px;
+            margin-bottom: 10px;
+        }
+        .seconddiv{
+            border: solid 1px;
+            margin-top: 20px;
+        }
+        .thirddiv{
+            border: solid 1px;
+            margin-bottom: -10px;
+        }
+        .fourthdiv{
+            border: solid 1px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- effective margin=max(20,10) -->
+    <div class="firstdiv">
+        div 1
+    </div>
+    <div class="seconddiv">
+        div 2
+    </div>
+    <!-- effective margin=20-10=10 -->    
+    <div class="thirddiv">
+        div 3
+    </div>
+    <div class="fourthdiv">
+        div 4
+    </div>
+</body>
+</html>

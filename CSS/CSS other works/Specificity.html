@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* specificity-5 */        
+        #firstdiv{
+            color: blue;
+        }
+        /* specificity-1 */
+        #firstpara{
+            color: aqua;
+        }
+        /* specificity-6 */           
+        .div1{
+            color: chartreuse;
+        }
+        /* specificity-3 */        
+        .para1{
+            color: darkred;
+        }
+        /* specificity-4 */                
+        p{
+            color: hotpink;
+        }
+        /* specificity-2 */             
+        .div1 .para1{
+            color:yellow
+        }
+
+        /* Two classess on same element. Last written will be picked. But in case of style which is not in last written, other class will selected */
+        .para21{
+            color:darkgoldenrod;
+            border: solid sienna;
+        }
+        .para22{
+            color:red;
+        }
+
+        /* specificity can be override by using !important--> the style with important keyword will be selected */
+        #thirdpara{
+            color:mediumaquamarine;
+        }
+        .para3{
+            color: yellow !important;
+        }
+
+        /* style gives with element  has always high specificity */
+        #fourthpara{
+            color: teal;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="div1" id="firstdiv">
+        <p class="para1" id="firstpara">This is para 1</p>
+    </div>
+    <div class="div2" id="seconddiv">
+        <p class="para21 para22" id="secondpara">This is para 2</p>
+        <div class="div3" id="thirddiv">
+            <p class="para3" id="thirdpara">This is para 3</p>
+        </div>
+
+        <div class="div4" id="fourthdiv">
+            <p class="para4" id="fourthpara" style="color: darkorchid;">This is para 4</p>
+        </div>
+    </div>    
+</body>
+</html>

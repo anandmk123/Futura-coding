@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>polymorphism</title>
+</head>
+<body>
+    <script>
+        class first{
+            add()
+            {
+                console.log("first step")
+            }
+        }
+        class second{
+            add()
+            {
+                console.log(50+50)
+
+            }
+        }
+        class third{
+            add()
+            {
+                console.log("Final step")
+            }
+        }
+
+        let obj1=new first();
+        let obj2=new second();
+        let obj3=new third();
+
+        obj1.add();
+        obj2.add();
+        obj3.add();
+    </script>
+</body>
+</html>

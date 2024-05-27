@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridbasic</title>
+    <style>
+        .maindiv{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            /* grid-template-columns: auto 300px; */
+            /* grid-template-rows:auto 600px  ; */
+            /* grid-template-columns: 1fr 2fr 500px; */
+            /* grid-template-columns: auto min-content auto; */
+            /* grid-template-columns: auto max-content auto; */
+            /* grid-template-columns: repeat(4,1fr); */
+            /* grid-template-columns: 100px minmax(100px,200px); */
+            gap: 5px;
+
+        }
+        .one{
+            background-color: aqua;
+            padding: 20px;
+            border: solid 3px;
+        }
+        .two{
+            background-color:blue;
+            padding: 20px;
+            border: solid 3px;
+        }
+        .three{
+            background-color:yellow;
+            padding: 20px;
+            border: solid 3px;
+        }
+        .four{
+            background-color:red;
+            padding: 20px;
+            border: solid 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="one">div1 child of maindiv</div>
+        <div class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea molestias dolor ex veniam. Debitis deserunt</div>
+        <div class="three">div3 child of maindiv</div>
+        <div class="four">div4 child of maindiv</div>
+        <div class="one">div1 child of maindiv</div>
+        <div class="two">div2 child of maindiv</div>
+        <div class="three">div3 child of maindiv</div>
+        <div class="four">div4 child of maindiv</div>
+    </div>
+    
+</body>
+</html>

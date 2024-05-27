@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridtemparea_and_gridarea</title>
+    <style>
+        .maindiv{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 20vh 60vh 20vh;
+            grid-template-areas: 
+            "header header header slide"
+            "main main . slide"
+            "footer footer footer slide";
+        }
+        .headerpart{
+            background-color: blue;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: header;
+        }
+        .slidepart{
+            background-color: seagreen;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: slide;
+        }
+        .mainpart{
+            background-color: saddlebrown;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: main;
+        }
+        .footerpart{
+            background-color:darkviolet;
+            border: 3px solid;
+            padding: 20px;
+            font-size: 20px;
+            grid-area: footer;
+        }
+        
+        /* media query to change template when window size less than 640px */
+        @media (max-width:640px){
+            .maindiv{
+            grid-template-areas: 
+            "header header header header"
+            "main main slide slide"
+            "footer footer footer footer";
+            }           
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="headerpart">
+            header part is hear
+        </div>
+        <div class="slidepart">
+            slide part is hear
+        </div>
+        <div class="mainpart">
+            mainpart is hear lo
+        </div>
+        <div class="footerpart">
+            foter part is hear
+        </div>
+    </div>
+</body>
+</html>

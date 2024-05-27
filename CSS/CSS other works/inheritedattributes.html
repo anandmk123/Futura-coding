@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inheritedattributes</title>
+    <style>
+        .main_div{
+            color: blue;
+            border: solid 3px blue;
+        }
+        .sub_div{
+            margin: 10px;
+            border: inherit;
+        }
+        .sub_div2{
+            margin: 10px;
+            color: initial;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main_div"> 
+        <div class="sub_div">color inherted from main_div</div>
+        <div class="sub_div2">border is not inher from main_div</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gridoverlapusinglinenumber</title>
+    <style>
+        .maindiv{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 5px;
+
+        }
+        .one{
+            background-color: aqua;
+            padding: 20px;
+            border: solid 3px;
+        }
+        .two{
+            background-color:blue;
+            padding: 20px;
+            border: solid 3px;
+        }
+        .three{
+            background-color:yellow;
+            padding: 20px;
+            border: solid 3px;
+        }
+        .four{
+            background-color:red;
+            padding: 20px;
+            border: solid 3px;
+        }
+        /* span/overlap the grid elements */
+
+        /* method-1 direct line number */
+        /* .overlap{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+        } */
+
+        /* method-2 line number and number of span area */
+        .overlap{
+            grid-column-start: 2;
+            grid-column-end: span 2;
+            grid-row-start: 2;
+            grid-row-end: span 2;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv">
+        <div class="one">div1 child of maindiv</div>
+        <div class="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea molestias dolor ex veniam. Debitis deserunt</div>
+        <div class="three">div3 child of maindiv</div>
+        <div class="four">div4 child of maindiv</div>
+        <div class="one overlap">div5 child of maindiv</div>
+        <div class="two">div6 child of maindiv</div>
+        <div class="three">div7 child of maindiv</div>
+        <div class="four">div8 child of maindiv</div>
+    </div>
+    
+</body>
+</html>
