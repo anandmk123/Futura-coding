@@ -1,0 +1,22 @@
+.background_style{
+    background-image: url('https://www.esynergysoft.com/img/bg.png');
+    background-position: left;
+    background-repeat: no-repeat;
+}
+.footer_icons{
+    width: 40px;
+    height: 40px;
+}
+.logo_disc{
+    font-size:16px;
+    color: #383838;
+    line-height: 24px;
+    font-weight:300
+}
+
+@media all and (max-width:992px){
+    .background_style{
+        background-image:none;
+    }
+    
+}

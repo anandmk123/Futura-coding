@@ -11,3 +11,4 @@ function parent(){
     }
     child()
 }
+//Lexical scope is the ability for a function scope to access variables from the parent scope. 

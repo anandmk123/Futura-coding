@@ -1,0 +1,17 @@
+.heading_style{
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+@media all and (max-width:991px){
+    #div_change{
+        flex-direction: row-reverse;
+    }
+}
+
+@media all and (max-width:767px){
+    #div_change{
+        flex-direction:column-reverse;
+    }
+}
