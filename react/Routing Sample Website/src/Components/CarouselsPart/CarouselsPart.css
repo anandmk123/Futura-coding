@@ -1,0 +1,20 @@
+.carouselstyle{
+    height: 60vh;
+}
+
+
+.carousel-indicators button{
+    background-color:rgb(158, 174, 174)!important;
+}
+.carousel-control-prev span{
+    background-color:rgb(158, 174, 174)!important;
+}
+.carousel-control-next span{
+    background-color:rgb(158, 174, 174)!important;
+}
+
+@media screen and (max-width:400px){
+    .carouselstyle{
+        width: 100%;
+    }
+}

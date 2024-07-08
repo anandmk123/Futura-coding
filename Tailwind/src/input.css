@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* add normal css file using layer */
+@layer base{
+    .box{
+        border: solid;
+    }
+}

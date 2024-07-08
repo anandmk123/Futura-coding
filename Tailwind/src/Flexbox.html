@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body>
+    <!-- flex row by default -->
+    <h1 class="text-4xl">flex row</h1>
+    <div class="flex">
+        <div class="bg-red-600">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600">Block 2</div>
+        <div class="bg-yellow-600">Block 3</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4</div>
+    </div>
+
+    <h1 class="text-4xl  mt-4">flex col</h1>
+    <div class="flex flex-col">
+        <div class="bg-red-600">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600">Block 2</div>
+        <div class="bg-yellow-600">Block 3</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4</div>
+    </div>
+
+    <h1 class="text-4xl mt-4">flex wrap</h1>
+    <div class="flex flex-wrap">
+        <div class="bg-red-600">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600">Block 2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo distinctio delectus, nam cum dolor nemo ipsa, natus tempovc </div>
+        <div class="bg-yellow-600">Block 3  cvbbfdbfdbdfdffd</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4</div>
+    </div>
+
+    <h1 class="text-4xl mt-4">justify content</h1>
+    <div class="flex justify-center bg-slate-300">
+        <div class="bg-red-600">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600">Block 2</div>
+        <div class="bg-yellow-600">Block 3</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4</div>
+    </div>
+
+    <h1 class="text-4xl mt-4">Align item</h1>
+    <div class="flex items-center h-56 bg-gray-200">
+        <div class="bg-red-600">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600">Block 2</div>
+        <div class="bg-yellow-600">Block 3</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4</div>
+    </div>
+
+    <!-- only applicable if flex-warp and flex overlaps to next line -->
+    <h1 class="text-4xl mt-4">Align Content</h1> 
+    <div class="flex flex-wrap h-56 bg-gray-200 content-center">
+        <div class="bg-red-600">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600">Block 2</div>
+        <div class="bg-yellow-600">Block 3</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fuga facere culpa aliquid quod incidunt.asdsadsadsfcsafcasfsa</div>
+    </div>
+
+    <!-- Align item property individually for child-->
+    <h1 class="text-4xl mt-4">Aligh Self</h1> 
+    <div class="flex flex-wrap h-56 bg-gray-200">
+        <div class="bg-red-600 self-end">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600 self-start">Block 2</div>
+        <div class="bg-yellow-600 self-center">Block 3</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae fuga facere culpa aliquid quod incidunt.asdsadsadsfcsafcasfsa</div>
+    </div>
+
+    <!--Gap between  -->
+    <h1 class="text-4xl">Gap</h1>
+    <div class="flex gap-3">
+        <div class="bg-red-600">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600">Block 2</div>
+        <div class="bg-yellow-600">Block 3</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4</div>
+    </div>
+
+    <!-- Responsive flex col if device-width>sm -->
+
+    <h1 class="text-4xl">Responsive</h1>
+    <div class="flex flex-col sm:flex-row  gap-2 h-56 bg-gray-200">
+        <div class="bg-red-600">Block 1 Lorem ipsum dolor sit amet consectetu</div>
+        <div class="bg-blue-600">Block 2</div>
+        <div class="bg-yellow-600">Block 3</div>
+        <div class="bg-green-600">Block 4 Block 4 Block 4</div>
+    </div>
+
+
+
+    
+
+</body>
+</html>
