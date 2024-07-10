@@ -1,0 +1,15 @@
+{
+  "name": "coremodule",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

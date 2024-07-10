@@ -4,7 +4,7 @@ const { default: axios } = require("axios")
 async function getData(){
     try {
         //await --> to wait for data loading 
-        const {data}= await axios.get('https://dummyjson.com/products') // object dereference
+        const {data}= await axios.get('https://dummyjson.com/products') // object destructering
         console.log(data)
               
     } catch (error) {

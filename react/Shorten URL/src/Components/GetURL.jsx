@@ -20,13 +20,13 @@ function GetURL() {
         setUserURL(prev => ({ ...prev, [key]: value }))
     }
 
-    const { shortURL, setShortURL, showURLFlag, setShowURLFlag,history,setHistory } = useURLContext()
+    const { shortURL, setShortURL, showURLFlag, setShowURLFlag, history, setHistory } = useURLContext()
 
-    const addHistory=(urlShort)=>{
-        setHistory(prev=>{
-            const date= new Date()
-            const his={LongURL:userURL.url,ShortenedURL:urlShort,DateAndTime:date}
-            return [his,...prev]
+    const addHistory = (urlShort) => {
+        setHistory(prev => {
+            const date = new Date()
+            const his = { LongURL: userURL.url, ShortenedURL: urlShort, DateAndTime: date.toString() }
+            return [his, ...prev]
         })
     }
 
@@ -118,6 +118,34 @@ function GetURL() {
                             </button>
                         </div>
                     </form>
+                </div>
+            </div>
+
+            <div className="flex flex-col mt-10">
+                <div className="-m-1.5 overflow-x-auto">
+                    <div className="p-1.5 inline-block w-full">
+                        <div className="overflow">
+                            <table className="w-full divide-y divide-gray-200">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" className="px-6 py-3 text-start text-lg font-medium  text-blue-300 uppercase">Long URL</th>
+                                        <th scope="col" className="px-6 py-3 text-start text-lg font-medium  text-blue-300 uppercase">Short URL</th>
+                                        <th scope="col" className="px-6 py-3 text-start text-lg font-medium  text-blue-300 uppercase">Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {history.map(item => {
+                                        return (<tr className="odd:bg-white even:bg-gray-100" key={item.DateAndTime}>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">{item.LongURL}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">{item.ShortenedURL}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800">{item.DateAndTime}</td>
+                                        </tr>)
+                                    }
+                                    )}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
