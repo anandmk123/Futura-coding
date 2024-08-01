@@ -6,4 +6,8 @@
 
 // import urlcore from "./urlcore,.mjs";
 
-import pathcore from "./pathcore.mjs";
+// import pathcore from "./pathcore.mjs";
+
+// import './fscore.mjs'
+
+import './fsjsfile.mjs'
